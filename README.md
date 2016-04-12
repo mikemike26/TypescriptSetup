@@ -10,6 +10,7 @@ $ npm install -g typescript
 Create a tsconfig.json (or copy from this repo) in your root client directory with the following contents
 ```sh
 {
+  "compileOnSave": true,
   "compilerOptions": {
     "noImplicitAny": false, //allows the use of type: any
     "removeComments": false,
@@ -17,7 +18,15 @@ Create a tsconfig.json (or copy from this repo) in your root client directory wi
     "target": "ES5",
     "sourceMap": true,
     "listFiles": false //shows files on transpile in the terminal
-  }
+  },
+  "exclude": [
+    "node_modules",
+
+    //we need to exclude these otherwise we'll get a duplicate error on compile
+    //it is not really known why there are 2 copies of these files, only the main is needed
+    "typings/browser",
+    "typings/browser.d.ts"
+  ]
 }
 ```
 #### Rename your files!
