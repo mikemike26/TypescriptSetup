@@ -63,7 +63,7 @@ $ typings install
 to install your definitions.  This is similar to npm modules.
 
 ## TSLint
-SLint checks your TypeScript code for readability, maintainability, and functionality errors.  This will help us make the transition to typescript and help enforce some code style conventions.
+TSLint checks your TypeScript code for readability, maintainability, and functionality errors.  This will help us make the transition to typescript and help enforce some code style conventions.
 
 Install globally 
 ```sh
