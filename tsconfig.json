@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false, //allows the use of type: any
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "target": "ES5",
+    "sourceMap": true,
+    "listFiles": false //shows files on transpile in the terminal
+  }
+}
